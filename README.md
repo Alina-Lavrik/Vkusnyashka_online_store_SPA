@@ -80,7 +80,3 @@ Vkusnyashka_store / <br>
 
 ![Главная страница](./src/images/ice_cream_page1.jpg) <br>
 ![Аналитика](./src/images/ice_cream_page2.jpg)
-
-### QRcode - Visit page on mobile
-
-![Visit page on mobile](./src/images/QRcode.png)

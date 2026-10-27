@@ -69,14 +69,18 @@ Vkusnyashka_store / <br>
 &nbsp; │&nbsp; &nbsp; ├── ProductList.jsx <br>
 &nbsp; │&nbsp; &nbsp; └── Notification.jsx <br>
 &nbsp; └── pages / <br>
-&nbsp; │&nbsp;&nbsp; ├── HomePage.jsx <br>
-&nbsp; |&nbsp;&nbsp; ├── CartPage.jsx <br>
-&nbsp; |&nbsp;&nbsp; ├── FavoritesPage.jsx <br>
-&nbsp; |&nbsp;&nbsp; ├── StatsPage.jsx <br>
-&nbsp; |&nbsp;&nbsp; └── AuthPage.jsx <br>
+&nbsp; │&nbsp; &nbsp; ├── HomePage.jsx <br>
+&nbsp; |&nbsp; &nbsp; ├── CartPage.jsx <br>
+&nbsp; |&nbsp; &nbsp; ├── FavoritesPage.jsx <br>
+&nbsp; |&nbsp; &nbsp; ├── StatsPage.jsx <br>
+&nbsp; |&nbsp; &nbsp; └── AuthPage.jsx <br>
 &nbsp; └── images / <br>
 
 ### Макеты проекта <br>
 
 ![Главная страница](./src/images/ice_cream_page1.jpg) <br>
 ![Аналитика](./src/images/ice_cream_page2.jpg)
+
+### QRcode - Visit page on mobile
+
+![Visit page on mobile](./src/images/QRcode.png)

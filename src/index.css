@@ -458,6 +458,7 @@ a.active {
   border-radius: 20px;
   padding: 0.1rem 0.2rem;
   border: 1px solid #bd9292;
+  display: inline-flex;
 }
 
 .qty-control button {
@@ -562,7 +563,6 @@ a.active {
 }
 
 .fav-table th {
-  text-align: left;
   padding: 0.6rem 0.2rem;
   border-bottom: 1px solid #efe6e2;
   font-weight: 700;
@@ -820,9 +820,17 @@ button:hover {
   padding: 0.6rem 0.2rem;
   /* border-bottom: 2px solid #e1d2cb; */
   font-weight: 700;
-  text-align: left;
+  /* text-align: left; */
   background: #faf3f0;
   white-space: nowrap;
+}
+
+.cart-table-left {
+  text-align: left;
+}
+
+.cart-table-center {
+  text-align: center;
 }
 
 .cart-table td {

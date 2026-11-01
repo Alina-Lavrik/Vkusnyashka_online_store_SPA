@@ -41,10 +41,10 @@ const CartPage = () => {
                     <table className="cart-table">
                     <thead>
                         <tr>
-                            <th>Товар</th>
-                            <th style={{ textAlign: 'center' }}>Количество</th>
-                            <th style={{ textAlign: 'center' }}>Сумма</th>
-                            <th style={{ textAlign: 'center' }}>Удалить</th>
+                            <th className="cart-table-left">Товар</th>
+                            <th className="cart-table-center">Количество</th>
+                            <th className="cart-table-center">Сумма</th>
+                            <th className="cart-table-center">Удалить</th>
                         </tr>
                     </thead>
                     <tbody>  
@@ -56,29 +56,29 @@ const CartPage = () => {
                                         {item.name}</span>
                                     </div>
                                 </td>
-                                <td style={{ textAlign: 'center' }}>
-                                    <div className="qty-control" style={{ display: 'inline-flex' }}>
+                                <td className="cart-table-center">
+                                    <div className="qty-control">
                                         <button onClick={() => dispatch(decreaseQuantity(item.id))}>−</button>
                                         <span>{item.amountToBuy}</span>
                                         <button onClick={() => dispatch(increaseQuantity(item.id))}>+</button>
                                     </div> 
                                 </td>
-                                <td style={{ textAlign: 'center' }} className="price">{item.price * item.amountToBuy} ₽</td>
-                                <td style={{ textAlign: 'center' }}><button className="remove-btn" title="Удалить товар" onClick={() => handleRemoveFromCart(item.id)}>✕</button></td>
+                                <td className="cart-table-center price">{item.price * item.amountToBuy} ₽</td>
+                                <td className="cart-table-center"><button className="remove-btn" title="Удалить товар" onClick={() => handleRemoveFromCart(item.id)}>✕</button></td>
                             </tr>
                         ))}
                         </tbody>
                             <tfoot>
                                 <tr>
                                     <td><strong>Итого</strong></td>
-                                    <td style={{ textAlign: 'center' }}><strong>{totalItems} шт</strong></td>
-                                    <td style={{ textAlign: 'center' }}><strong className="stat-total">{totalCart} ₽</strong></td>
+                                    <td className="cart-table-center"><strong>{totalItems} шт</strong></td>
+                                    <td className="cart-table-center"><strong className="stat-total">{totalCart} ₽</strong></td>
                                     <td></td>
                                 </tr>
                             </tfoot>
                         </table>
                 <button className="btn-buy" onClick={handleBuy}>
-                    💳 Купить ({totalItems} шт. · {totalCart} ₽)
+                    💳 Купить ({totalItems} шт · {totalCart} ₽)
                 </button>        
                 </div>
                 )}

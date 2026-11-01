@@ -24,9 +24,9 @@ const FavoritesPage = () => {
                 <table className="fav-table">
                     <thead>
                         <tr>
-                            <th>Товар</th>
-                            <th style={{ textAlign: 'center' }}>Стоимость</th>
-                            <th style={{ textAlign: 'center' }}>Удалить</th>
+                            <th className="cart-table-left">Товар</th>
+                            <th className="cart-table-center">Стоимость</th>
+                            <th className="cart-table-center">Удалить</th>
                         </tr>
                     </thead>
                     <tbody>
@@ -34,11 +34,11 @@ const FavoritesPage = () => {
                             <tr key={item.id}>
                                 <td>
                                     <div className="fav-item">
-                                        <img src={item.image} alt={item.name} className="mini-image" /><span className="name">{item.name}</span></div>
+                                        <img src={item.image} alt={item.name} className="mini-image"/><span className="name">{item.name}</span></div>
                                 </td>
-                                <td style={{ textAlign: 'center' }}><span className="price">{item.price} ₽</span></td>
-                                <td style={{ textAlign: 'center' }}>
-                                    <button className="remove-btn" onClick={() => handleRemoveFromFavorites(item.id)}>✕</button></td>
+                                <td className="cart-table-center price"><span>{item.price} ₽</span></td>
+                                <td className="cart-table-center">
+                                    <button className="remove-btn cart-table-center" onClick={() => handleRemoveFromFavorites(item.id)}>✕</button></td>
                             </tr>
                         ))}
                     </tbody>

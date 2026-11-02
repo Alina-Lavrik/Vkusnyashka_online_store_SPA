@@ -14,10 +14,6 @@ export const productsSlice = createSlice({
         setAmount: (state, action) => {
             const { productId, newAmount } = action.payload;
             const product = state.items.find(item => item.id === productId);
-            // if (product) {
-            //     // количество не может быть меньше 1
-            //     product.amountToBuy = Math.max(1, newAmount);
-            // }
             if (product) {
                 const safeAmount = Number.isFinite(newAmount) ? Math.max(1, Math.floor(newAmount)) : 1;
                 product.amountToBuy = safeAmount;
@@ -87,7 +83,7 @@ export const productsSlice = createSlice({
     }
 });
 
-// Экшены
+
 export const { setAmount, addToCard, removeFromCart, addToFavorites, removeFromFavorites, decreaseQuantity, increaseQuantity, clearCart} = productsSlice.actions;
 
 export default productsSlice.reducer;

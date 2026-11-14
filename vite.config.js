@@ -5,7 +5,7 @@ import { vitePages } from '@kingironman2011/vite-pages'
 
 // https://vite.dev/config/
 export default defineConfig({
-  plugins: [react(), qrcode(), vitePages()],
+  plugins: [react(), qrcode(), vitePages({ verbose: true })],
   base: '/Vkusnyashka_online_store_SPA/', 
   server: {
     port: 3000,

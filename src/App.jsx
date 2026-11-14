@@ -10,7 +10,7 @@ import AuthPage from './pages/AuthPage';
 function App() {
 
   return (
-      <BrowserRouter>
+      <BrowserRouter basename={import.meta.env.BASE_URL}>
         <div className="container img_back white">
           <div className="top">
           <Navigation />

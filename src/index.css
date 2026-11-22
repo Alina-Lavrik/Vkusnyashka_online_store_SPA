@@ -16,10 +16,6 @@ html {
   /* 16px по умолчанию*/
 }
 
-:root {
-  color-scheme: only light;
-}
-
 #root {
   max-width: 81.25rem;
   min-width: 18.13px;
